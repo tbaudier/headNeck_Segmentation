@@ -5,7 +5,7 @@
 Extract data from xvi (folder "extractData")
 
 ## Part2:
-Run Gate
+Run Gate (gateSimulation) and reconstruct the simulated cbct
 
 ## Part3:
 Prepare data and run nnUNet

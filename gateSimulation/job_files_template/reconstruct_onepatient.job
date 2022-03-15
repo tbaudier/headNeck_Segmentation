@@ -1,0 +1,16 @@
+#! /usr/bin/bash -lx
+#$ -P "P_creatis"
+#$ -l vmem=10G
+#$ -l fsize=3G
+#$ -l ct=10:00:00
+#$ -l sps=1
+#$ -N "Python script""
+#$ -j yes
+
+cd ~/sps
+source ~/.bashrc
+source venvITK/bin/activate
+cd ~/sps/
+python ~/sps/py/reconstruct_job_onepatient.py 1000000 20
+
+deactivate
